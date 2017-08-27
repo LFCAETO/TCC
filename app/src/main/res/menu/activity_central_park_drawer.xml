@@ -4,33 +4,33 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@mipmap/home"
             android:title="Home" />
         <item
             android:id="@+id/nav_informe"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@mipmap/informe"
             android:title="Informe Visitante" />
-        <item
-            android:id="@+id/nav_churrasqueira"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Correspondencia" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Reserva de espaco" />
-    </group>
 
-    <item android:title="Exemplo menu">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="MENU 1" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="MENU 2" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_reserva"
+            android:icon="@mipmap/espaco"
+            android:title="Reservar Espaço" />
+
+        <item
+            android:id="@+id/nav_correspondencia"
+            android:icon="@mipmap/correspondencia"
+            android:title="Correspondência" />
+
+        <item
+            android:id="@+id/nav_atas"
+            android:icon="@mipmap/atas"
+            android:title="Atas do Conselho" />
+
+        <item
+            android:id="@+id/nav_prestaConta"
+            android:icon="@mipmap/pestacao"
+            android:title="Prestação de Conta" />
+
+    </group>
 
 </menu>

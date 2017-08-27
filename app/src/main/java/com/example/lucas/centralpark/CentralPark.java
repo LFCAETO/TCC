@@ -84,16 +84,15 @@ public class CentralPark extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
         } else if (id == R.id.nav_informe) {
             fragmentManager.beginTransaction().replace(R.id.conteiner, new InformeFragment()).commit();
+        } else if (id == R.id.nav_reserva) {
+            fragmentManager.beginTransaction().replace(R.id.conteiner, new ReservaFragment()).commit();
+        } else if (id == R.id.nav_correspondencia) {
+            fragmentManager.beginTransaction().replace(R.id.conteiner, new CorrespondenciaFragment()).commit();
+        } else if (id == R.id.nav_atas) {
+            fragmentManager.beginTransaction().replace(R.id.conteiner, new AtasFragment()).commit();
+        } else if (id == R.id.nav_prestaConta) {
+            fragmentManager.beginTransaction().replace(R.id.conteiner, new PrestacaoFragment()).commit();
         }
-   //     } else if (id == R.id.nav_slideshow) {
-    //        fragmentManager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
-    //    } else if (id == R.id.nav_manage) {
-    //        fragmentManager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
-   //     } else if (id == R.id.nav_share) {
-   //         fragmentManager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
-   //     } else if (id == R.id.nav_send) {
-   //         fragmentManager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
-   //     }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
