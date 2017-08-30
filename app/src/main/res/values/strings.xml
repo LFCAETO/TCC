@@ -8,4 +8,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="arrayReserva">
+        <item>Salão de festas</item>
+        <item>Churrasqueira 1</item>
+        <item>Churrasqueira 2</item>
+        <item>Quadra de Futebol</item>
+    </string-array>
 </resources>

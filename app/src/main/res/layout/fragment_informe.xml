@@ -1,16 +1,101 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lucas.centralpark.HomeFragment">
+    android:gravity="center"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textViewCadastro"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Informe Visitante"
-        android:textSize="42dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:text="Informar Visitantes"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/nomeVisitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/sobrenomeVisitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Sobrenome" />
+
+    <EditText
+        android:id="@+id/fantasiaVisitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome Fantasia (Opcional)" />
+
+    <EditText
+        android:id="@+id/razaoVisitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Razão Social (Opcional)" />
+
+    <EditText
+        android:id="@+id/quantConvidVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Quantidade" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/RbLibera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liberar" />
+
+        <RadioButton
+            android:id="@+id/RbProibi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Proibir"
+            android:layout_marginBottom="20dp"/>
+    </RadioGroup>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnConfirmarVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar" />
+
+        <Button
+            android:id="@+id/btnCancelarVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+    </LinearLayout>
+</LinearLayout>

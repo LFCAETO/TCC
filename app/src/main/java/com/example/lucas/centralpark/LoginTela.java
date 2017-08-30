@@ -51,28 +51,32 @@ public class LoginTela extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 }
 
-                /*        ConnectivityManager connMgr = (ConnectivityManager)
+ /*     ConnectivityManager connMgr = (ConnectivityManager)
                         getSystemService(Context.CONNECTIVITY_SERVICE);
-                NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
-                if (networkInfo != null && networkInfo.isConnected()){
+        if (networkInfo != null && networkInfo.isConnected()){
+                String Apto = editEmailLogar.getText().toString();
+                String Senha = editSenhaLogar.getText().toString();
+                new SolicitaDados().execute(stringUrl);
 
-                    String Apto = editEmailLogar.getText().toString();
-                    String Senha = editSenhaLogar.getText().toString();
-                    //new SolicitaDados().execute(stringUrl);
-
-                    if(editEmailLogar == null || editSenhaLogar == null){
+                if(editEmailLogar == null || editSenhaLogar == null){
                         Toast.makeText(getApplicationContext(), "Nenhuma campo pode esta vazio", Toast.LENGTH_LONG).show();
-                    } else{
+                } else{
                         url = "http://127.0.0.1/login/logar.php";
                         parametros = "Apartamento = " + email + "&senha = " + senha;
 
                         new SolicitaDados().execute(url);
-                            Intent i2 = new Intent(LoginTela.this, CentralPark.class);
-                            startActivity(i2);
-
+                        Intent i2 = new Intent(LoginTela.this, CentralPark.class);
+                        startActivity(i2);
                       }
                 } else{
                      Toast.makeText(getApplicationContext(), "Nenhuma conexão foi detectada", Toast.LENGTH_LONG).show();
@@ -82,17 +86,15 @@ public class LoginTela extends AppCompatActivity {
     }
 
    *//* private class SolicitaDados extends AsyncTask<String, Void, String> {
-        @Override
-        protected String doInBackground(String... urls){
-            try{
-                return Conexao.postDados(urls[0]);
-            }catch (IOException e){
-                return "Unable to retrieve web page";
-            }
-        }
-        //OnPost execute
-        @Override
-        protected void onPostExecute(String result){
-            TextView.setText(result);
-        }
+         @Override
+         protected String doInBackground(String... urls) {
+             return Conexao.postDados(urls[0], parametros);
+         }
+
+         //OnPost execute
+         @Override
+         protected void onPostExecute(String result) {
+             //TextView.setText(result);
+         }
+    }
     }*/

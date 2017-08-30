@@ -31,6 +31,11 @@
             android:icon="@mipmap/pestacao"
             android:title="Prestação de Conta" />
 
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@mipmap/sair"
+            android:title="Sair" />
+
     </group>
 
 </menu>

@@ -68,26 +68,6 @@
         android:inputType="textPersonName"
         android:hint="Senha" />
 
-    <RadioGroup
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/RbProprietario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Proprietário" />
-
-        <RadioButton
-            android:id="@+id/RbLocatario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Locatário" />
-    </RadioGroup>
-
-
     <EditText
         android:id="@+id/editTextVeiculo"
         android:layout_width="match_parent"
@@ -104,11 +84,32 @@
         android:inputType="textPersonName"
         android:hint="Número da Garagem" />
 
-    <RadioButton
-        android:id="@+id/RbSindico"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Síndico" />
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/RbSindico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Síndico" />
+
+        <RadioButton
+            android:id="@+id/RbProprietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Proprietário" />
+
+        <RadioButton
+            android:id="@+id/RbLocatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Locatário" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
