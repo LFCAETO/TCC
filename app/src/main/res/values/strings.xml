@@ -15,4 +15,9 @@
         <item>Churrasqueira 2</item>
         <item>Quadra de Futebol</item>
     </string-array>
+
+    <string-array name="arrayVisitante">
+        <item>Liberar</item>
+        <item>Proibir</item>
+    </string-array>
 </resources>

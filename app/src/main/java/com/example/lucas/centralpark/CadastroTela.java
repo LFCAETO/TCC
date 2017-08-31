@@ -38,6 +38,9 @@ public class CadastroTela extends AppCompatActivity {
         btnCancelar = (Button) findViewById(R.id.btnCancelar);
         btnConfirmar = (Button) findViewById(R.id.btnConfirmar);
 
+        editTelefone.addTextChangedListener(Mask.insert("(##)#####-####", editTelefone));
+
+
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){

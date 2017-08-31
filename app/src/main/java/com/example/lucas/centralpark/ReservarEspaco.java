@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -25,6 +26,9 @@ public class ReservarEspaco extends Fragment {
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this.getActivity(), R.array.arrayReserva, android.R.layout.simple_spinner_item);
         opcaoEspaco.setAdapter(adapter);
+
+        final EditText dataEvento = (EditText) v.findViewById(R.id.dataEvento);
+        dataEvento.addTextChangedListener(Mask.insert("##/##/####", dataEvento));
 
         btnConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,4 +49,6 @@ public class ReservarEspaco extends Fragment {
         });
         return v;
     }
+
+
 }

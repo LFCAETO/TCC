@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Nome" />
+        android:hint="Nome"
+        android:maxLength="20" />
 
     <EditText
         android:id="@+id/sobrenomeVisitante"
@@ -34,7 +35,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Sobrenome" />
+        android:hint="Sobrenome"
+        android:maxLength="30"/>
 
     <EditText
         android:id="@+id/fantasiaVisitante"
@@ -42,7 +44,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Nome Fantasia (Opcional)" />
+        android:hint="Nome Fantasia (Opcional)"
+        android:maxLength="20"/>
 
     <EditText
         android:id="@+id/razaoVisitante"
@@ -50,7 +53,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Razão Social (Opcional)" />
+        android:hint="Razão Social (Opcional)"
+        android:maxLength="30"/>
 
     <EditText
         android:id="@+id/quantConvidVisit"
@@ -58,28 +62,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:hint="Quantidade" />
+        android:hint="Quantidade"
+        android:layout_marginBottom="10dp"
+        android:maxLength="3"/>
 
-    <RadioGroup
+    <Spinner
+        android:id="@+id/spinnerVisitante"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
 
-        <RadioButton
-            android:id="@+id/RbLibera"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Liberar" />
-
-        <RadioButton
-            android:id="@+id/RbProibi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="Proibir"
-            android:layout_marginBottom="20dp"/>
-    </RadioGroup>
-
-        <LinearLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

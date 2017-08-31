@@ -21,7 +21,8 @@ import java.net.ConnectException;
 
 public class LoginTela extends AppCompatActivity {
 
-    EditText editEmailLogar, editSenhaLogar;
+    TextView aptoHeader;
+    EditText editAptoLogar, editSenhaLogar;
     Button btnLogar;
     TextView CadastroTxt;
 
@@ -30,10 +31,11 @@ public class LoginTela extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        editEmailLogar = (EditText) findViewById(R.id.editTextAptoLogar);
+        editAptoLogar = (EditText) findViewById(R.id.editTextAptoLogar);
         editSenhaLogar = (EditText) findViewById(R.id.editTextSenhaLogar);
         btnLogar = (Button) findViewById(R.id.btnLogar);
         CadastroTxt = (TextView) findViewById(R.id.txtCadastro);
+
 
         CadastroTxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,16 +52,8 @@ public class LoginTela extends AppCompatActivity {
                 startActivity(i2);
             }
         });
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        finish();
-    }
-}
-
- /*     ConnectivityManager connMgr = (ConnectivityManager)
+        /*     ConnectivityManager connMgr = (ConnectivityManager)
                         getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
@@ -98,3 +92,12 @@ public class LoginTela extends AppCompatActivity {
          }
     }
     }*/
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
+}
+

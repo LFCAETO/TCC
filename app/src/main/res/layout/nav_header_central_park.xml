@@ -34,7 +34,7 @@
         android:id="@+id/aptoHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="APTO 1106 - BL 2"
+
         android:textAlignment="center"
         android:textSize="12dp">
     </TextView>

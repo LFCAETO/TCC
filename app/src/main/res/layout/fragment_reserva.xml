@@ -40,7 +40,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:hint="Quantidade de Pessoas"/>
+        android:hint="Quantidade de Pessoas"
+        android:maxLength="3"/>
 
     <EditText
         android:id="@+id/fantasiaVisitante"
@@ -49,7 +50,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Descrição"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:maxLength="40"/>
 
     <LinearLayout
         android:orientation="horizontal"
