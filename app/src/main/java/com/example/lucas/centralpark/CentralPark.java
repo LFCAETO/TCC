@@ -1,7 +1,6 @@
 package com.example.lucas.centralpark;
 
 import android.os.Bundle;
-import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
@@ -14,10 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class CentralPark extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -94,7 +89,7 @@ public class CentralPark extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.conteiner, new InformeFragment()).commit();
 
         } else if (id == R.id.nav_reserva) {
-            fragmentManager.beginTransaction().replace(R.id.conteiner, new ReservarEspaco()).commit();
+            fragmentManager.beginTransaction().replace(R.id.conteiner, new ReservarFragment()).commit();
         } else if (id == R.id.nav_correspondencia) {
             fragmentManager.beginTransaction().replace(R.id.conteiner, new CorrespondenciaFragment()).commit();
         } else if (id == R.id.nav_atas) {

@@ -13,7 +13,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 
-public class ReservarEspaco extends Fragment {
+public class ReservarFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

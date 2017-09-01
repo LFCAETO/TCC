@@ -34,16 +34,6 @@ public class LoginTela extends AppCompatActivity {
         editAptoLogar = (EditText) findViewById(R.id.editTextAptoLogar);
         editSenhaLogar = (EditText) findViewById(R.id.editTextSenhaLogar);
         btnLogar = (Button) findViewById(R.id.btnLogar);
-        CadastroTxt = (TextView) findViewById(R.id.txtCadastro);
-
-
-        CadastroTxt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LoginTela.this, AreaSindico.class);
-                startActivity(i);
-            }
-        });
 
         btnLogar.setOnClickListener(new View.OnClickListener(){
             @Override

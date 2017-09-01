@@ -2,15 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lucas.centralpark.HomeFragment">
+    tools:context="com.example.lucas.centralpark.HomeFragment"
+    android:background="@drawable/aaaa">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HOME"
-        android:textSize="42dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
 
 </FrameLayout>
