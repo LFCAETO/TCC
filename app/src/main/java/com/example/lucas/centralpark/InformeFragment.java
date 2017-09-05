@@ -29,6 +29,7 @@ public class InformeFragment extends Fragment {
         Spinner opcaoVisitante = (Spinner) v.findViewById(R.id.spinnerVisitante);
         Button btnCadastra = (Button) v.findViewById(R.id.btnConfirmarVisitante);
         Button btnCancelar = (Button) v.findViewById(R.id.btnCancelarVisitante);
+        TextView viewVisitante = (TextView) v.findViewById(R.id.visualizarVisitantes);
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this.getActivity(), R.array.arrayVisitante, android.R.layout.simple_spinner_item);
         opcaoVisitante.setAdapter(adapter);
@@ -51,6 +52,16 @@ public class InformeFragment extends Fragment {
                 manager.beginTransaction().replace(R.id.conteiner, new HomeFragment()).commit();
             }
         });
+
+        viewVisitante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction().replace(R.id.conteiner, new ViewVisitanteFragment()).commit();
+            }
+        });
+
         return v;
     }
+
 }
